@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "bf745a03-0b86-4d98-b82d-966c15aa23f4",
+		"name": "Test TPA BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11115624"
+	},
+	"item": [
+		{
+			"name": "Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/article/10/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"10",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Ini Article Kelima Saya\",\r\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit non turpis euismod varius. Donec luctus urna nunc, sit amet mattis sapien bibendum quis. Fusce aliquam urna nec aliquam.\",\r\n    \"category\": \"abcd\",\r\n    \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/article",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Ini Article Kedua Saya\",\r\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit non turpis euismod varius. Donec luctus urna nunc, sit amet mattis sapien bibendum quis. Fusce aliquam urna nec aliquam.\",\r\n    \"category\": \"abcde\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
